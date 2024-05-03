@@ -90,11 +90,11 @@ local Games = ({
 
 
 
-        PlayerSection:AddSlider('XD', 1, 1000, 50, {toggleable = true, flag = 'Slider_Flag', fireontoggle = true, fireondrag = true, rounded = true}, function(val, bool)
+        PlayerSection:AddSlider('FOV', 1, 120, 70, {toggleable = true, flag = 'Slider_Flag', fireontoggle = true, fireondrag = true, rounded = true}, function(val, bool)
             if bool then
-                GetHumanoid().JumpPower = val
+                Camera.FieldOfView = val
             else
-                GetHumanoid().JumpPower = oldWalkSpeed
+                Camera.FieldOfView = 70
             end
         end)
     end)
