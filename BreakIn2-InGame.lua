@@ -26,9 +26,16 @@ local function GetHumanoid()
         local Humanoid = Character:FindFirstChildOfClass('Humanoid')
 
 
-        if Humanoid then
-            return Humanoid
-        end
+        task.delay(0.6, function()
+            if not Humanoid then Humanoid = Character:FindFirstChildOfClass('Humanoid') end
+
+            
+            if Humanoid then
+                return Humanoid
+            else
+                continue
+            end
+        end)
     end
 end
 
