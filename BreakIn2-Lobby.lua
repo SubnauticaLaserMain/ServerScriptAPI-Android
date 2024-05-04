@@ -19,6 +19,8 @@ local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/Regul
 
 
 
+local usingWalkSpeed = 16
+
 --[[LOADER FOR: Break In 2 - LOBBY]]
 
     local Window = Library:AddWindow({
