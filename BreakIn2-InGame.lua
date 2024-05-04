@@ -15,6 +15,28 @@ local Camera = workspace.CurrentCamera
 
 
 
+
+local function GetHumanoid()
+    local Character = PlayerService.LocalPlayer.Character or PlayerService.LocalPlayer.CharacterAdded:Wait()
+
+
+
+
+    if Character then
+        local Humanoid = Character:FindFirstChildOfClass('Humanoid')
+
+
+        if Humanoid then
+            return Humanoid
+        end
+    end
+end
+
+
+
+
+
+
 local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/RegularVynixu/UI-Libraries/main/Vynixius/Source.lua'))()
 
 
