@@ -19,7 +19,8 @@ local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/Regul
 
 
 
-local usingWalkSpeed = 16
+local usingWalkSpeed = false
+local oldWalkSpeed = 16
 
 --[[LOADER FOR: Break In 2 - LOBBY]]
 
@@ -59,7 +60,7 @@ local usingWalkSpeed = 16
         if bool then
             GetHumanoid().JumpPower = val
         else
-            GetHumanoid().JumpPower = oldWalkSpeed
+            GetHumanoid().JumpPower = 50
         end
     end)
 
