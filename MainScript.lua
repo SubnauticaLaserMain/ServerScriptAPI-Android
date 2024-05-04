@@ -27,5 +27,5 @@ local GamesSupported = ({
 
 
 if GamesSupported ~= nil then
-    loadstring(GamesSupported)
+    loadstring(GamesSupported)()
 end
