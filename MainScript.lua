@@ -22,7 +22,7 @@ local GamesSupported = ({
     -- In Game (Break In 2)
     [13864667823] = HttpGet('https://raw.githubusercontent.com/SubnauticaLaserMain/ServerScriptAPI-Android/main/BreakIn2-InGame.lua', true),
     -- Lobby (Break In 2)
-    [13864661000] = HttpGet('https://github.com/SubnauticaLaserMain/ServerScriptAPI-Android/blob/main/BreakIn2-Lobby.lua', true)
+    [13864661000] = HttpGet('https://raw.githubusercontent.com/SubnauticaLaserMain/ServerScriptAPI-Android/main/BreakIn2-Lobby-Update2.lua', true)
 })[game.PlaceId]
 
 
